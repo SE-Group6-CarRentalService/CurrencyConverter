@@ -14,3 +14,7 @@ footer{
 .buttonColor{
   background: #37AA4C;
 }
+
+.activebutton{
+  color: pink;
+}
