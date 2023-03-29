@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {CarOverview} from "../model/CarOverview";
 import {Cars} from "../mockdata/mock-carlist";
 

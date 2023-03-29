@@ -12,7 +12,7 @@ import { RentalSystemComponent } from './rental-system/rental-system.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { RentalCheckoutComponent } from './rental-checkout/rental-checkout.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
@@ -38,7 +38,8 @@ import {MatIconModule} from "@angular/material/icon";
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
