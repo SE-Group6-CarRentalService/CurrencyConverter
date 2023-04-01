@@ -1,7 +1,9 @@
 from suds.client import Client
 from suds.cache import NoCache
 
-my_client = Client('http://127.0.0.1:8000/SOAPservice/soap_service/?WSDL', cache=NoCache())
+my_client = Client('https://currency-converter-gr6.azurewebsites.net/SOAPservice/soap_service/?WSDL', cache=NoCache())
+#my_client = Client('http://127.0.0.1:8000/SOAPservice/soap_service/?WSDL', cache=NoCache())
+#my_client = Client('http://127.0.0.1:8000/SOAPservice/soap_service/?WSDL', cache=NoCache())
 #currency-converter-group6.azurewebsites.net
 
 print(my_client)

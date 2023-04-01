@@ -1,5 +1,5 @@
 # base image  
-FROM python:3.10   
+FROM continuumio/miniconda3  
 # setup environment variable  
 ENV DockerHOME=/home/app/webapp  
 
@@ -16,9 +16,9 @@ ENV PYTHONUNBUFFERED 1
 # copy whole project to your docker home directory. 
 COPY . $DockerHOME  
 # run this command to install all dependencies  
-RUN conda install -r requirements.txt  
+RUN pip install -r requirements.txt  
 # port where the Django app runs  
-EXPOSE 8950  
+EXPOSE 8000 
 
 VOLUME [ "/data" ]
 # start server  
