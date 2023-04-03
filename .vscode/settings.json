@@ -30,6 +30,6 @@
         "venv.bak{,/**}",
         ".vscode{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/03c86056-0ace-4c1e-9294-bac5b4a57749/resourceGroups/currency-converter-g6_group/providers/Microsoft.Web/sites/currency-converter-g6",
-    "appService.deploySubpath": "."
+    "appService.defaultWebAppToDeploy": "/subscriptions/03c86056-0ace-4c1e-9294-bac5b4a57749/resourceGroups/CarRental-Group6_group/providers/Microsoft.Web/sites/FastCAR-CarRental",
+    "appService.deploySubpath": "dist"
 }
