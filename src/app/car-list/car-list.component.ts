@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {CarOverview} from "../model/CarOverview";
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Cars} from "../mockdata/mock-carlist";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-car-list',
@@ -9,11 +9,20 @@ import {Cars} from "../mockdata/mock-carlist";
 })
 export class CarListComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   cars = Cars;
 
   ngOnInit(): void {
   }
 
+  checkout(rented:Boolean){
+    if (rented){
+      console.log("Already rented")
+    }else {
+      this.router.navigate(['/checkout'])
+    }
+  }
 }
+
+

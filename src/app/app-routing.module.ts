@@ -7,14 +7,23 @@ import {RentalSystemComponent} from "./rental-system/rental-system.component";
 import {UserSettingsComponent} from "./user-settings/user-settings.component";
 import {UserLoginComponent} from "./user-login/user-login.component";
 import {RentalCheckoutComponent} from "./rental-checkout/rental-checkout.component";
+import {StartPageComponent} from "./start-page/start-page.component";
+import {FaqComponent} from "./faq/faq.component";
+import {AboutComponent} from "./about/about.component";
+import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 
 const routes:Routes = [
+  {path: '', component: StartPageComponent},
   {path: 'cars', component: CarListComponent},
   {path: 'locations', component: LocationMapComponent},
   {path: 'rentals', component: RentalSystemComponent},
   {path: 'user', component: UserSettingsComponent},
   {path: 'login', component: UserLoginComponent},
-  {path: 'checkout', component: RentalCheckoutComponent}
+  {path: 'checkout', component: RentalCheckoutComponent},
+  {path: 'faq', component: FaqComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'privacy', component: PrivacyPolicyComponent}
+
 ]
 
 @NgModule({

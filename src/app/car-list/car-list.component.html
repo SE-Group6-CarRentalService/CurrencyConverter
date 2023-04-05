@@ -1,14 +1,21 @@
-<div class="list-group w-auto" *ngFor="let car of cars">
-  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
-    <span  alt="carLogo" height="32" class="material-icons rounded-circle flex-shrink-0" [ngStyle]="{'color': car.rented ? 'red' : 'green' }">
+<div class="list-group w-auto pb-1" *ngFor="let car of cars">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span  alt="carLogo" height="32" class="material-icons rounded-circle flex-shrink-0 me-2" [ngStyle]="{'color': car.rented ? 'red' : 'green' }">
       {{car.rented ? "event_busy" : "event_available"}}
-    </span>
-    <div class="d-flex gap-2 w-100 justify-content-between">
-      <div>
-        <h6 class="mb-0">{{car.fuel}}</h6>
-        <p class="mb-0 opacity-75">{{car.model}}</p>
+        </span>
+        <p class="mb-0">{{car.model}}</p>
+      </mat-panel-title>
+      <div class="align-content-end">
+        <mat-panel-description >
+          {{car.price}} USD/day
+          <a class="material-icons md-24 iconColor ms-2" (click)="checkout(car.rented)">shopping_cart</a>
+        </mat-panel-description>
       </div>
-      <small class="opacity-50 text-nowrap">{{car.price}} USD/day</small>
-    </div>
-  </a>
+
+
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
 </div>

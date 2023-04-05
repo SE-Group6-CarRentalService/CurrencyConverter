@@ -5,7 +5,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarListComponent } from './car-list/car-list.component';
+import { CarListComponent} from './car-list/car-list.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import { LocationMapComponent } from './location-map/location-map.component';
 import { RentalSystemComponent } from './rental-system/rental-system.component';
@@ -17,6 +17,12 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatIconModule} from "@angular/material/icon";
+import { StartPageComponent } from './start-page/start-page.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import { FaqComponent } from './faq/faq.component';
+import { AboutComponent } from './about/about.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -26,7 +32,11 @@ import {MatIconModule} from "@angular/material/icon";
     LocationMapComponent,
     RentalSystemComponent,
     UserLoginComponent,
-    RentalCheckoutComponent
+    RentalCheckoutComponent,
+    StartPageComponent,
+    FaqComponent,
+    AboutComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +49,9 @@ import {MatIconModule} from "@angular/material/icon";
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
