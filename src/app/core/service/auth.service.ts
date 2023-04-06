@@ -18,4 +18,8 @@ export class AuthService {
   login(loginDto : LoginDto) : Observable<AuthenticationDto>{
     return this.http.post<AuthenticationDto>(this.url + 'v1/customers/login', loginDto);
   }
+
+  isLoggedIn() : Boolean{
+    return false;
+  }
 }

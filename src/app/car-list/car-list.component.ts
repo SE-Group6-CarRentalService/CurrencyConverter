@@ -1,6 +1,7 @@
 import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Cars} from "../mockdata/mock-carlist";
 import {Router} from "@angular/router";
+import {CarOverview} from "../model/CarOverview";
 
 @Component({
   selector: 'app-car-list',
@@ -16,11 +17,15 @@ export class CarListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  checkout(rented:Boolean){
-    if (rented){
+  checkout(car:CarOverview){
+    if (car.rented){
       console.log("Already rented")
     }else {
-      this.router.navigate(['/checkout'])
+      this.router.navigate(['/checkout'], {
+        queryParams: {
+          car : encodeURIComponent(JSON.stringify(car))
+        }
+      })
     }
   }
 }

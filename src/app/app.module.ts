@@ -23,6 +23,7 @@ import { FaqComponent } from './faq/faq.component';
 import { AboutComponent } from './about/about.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import {MatListModule} from "@angular/material/list";
+import {LoginActivate} from "./core/service/LoginActivate";
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import {MatListModule} from "@angular/material/list";
     MatExpansionModule,
     MatListModule
   ],
-  providers: [],
+  providers: [LoginActivate],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

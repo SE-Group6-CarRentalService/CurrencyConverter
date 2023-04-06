@@ -10,12 +10,16 @@
       <div class="align-content-end">
         <mat-panel-description >
           {{car.price}} USD/day
-          <a class="material-icons md-24 iconColor ms-2" (click)="checkout(car.rented)">shopping_cart</a>
+          <a class="material-icons md-24 iconColor ms-2" (click)="checkout(car)">shopping_cart</a>
         </mat-panel-description>
       </div>
 
 
     </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
+    <mat-list>
+      <mat-list-item>Fuel: {{car.fuel}}</mat-list-item>
+      <mat-list-item>Mileage: {{car.mileage}} km</mat-list-item>
+      <mat-list-item *ngIf="car.automatic">Automatic</mat-list-item>
+    </mat-list>
   </mat-expansion-panel>
 </div>

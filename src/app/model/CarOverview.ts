@@ -3,5 +3,6 @@ export interface CarOverview {
   price:number;
   mileage:number;
   fuel:string;
+  automatic:boolean;
   rented:boolean;
 }

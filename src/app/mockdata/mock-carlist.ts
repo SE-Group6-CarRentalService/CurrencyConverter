@@ -6,6 +6,7 @@ export const Cars : CarOverview[] = [
     fuel: "Diesel",
     mileage: 170000,
     price: 80,
+    automatic:true,
     rented: false
   },
   {
@@ -13,6 +14,7 @@ export const Cars : CarOverview[] = [
     fuel: "Diesel",
     mileage: 12000,
     price: 90,
+    automatic:false,
     rented: true
   },
   {
@@ -20,6 +22,7 @@ export const Cars : CarOverview[] = [
     fuel: "Benzin",
     mileage: 30000,
     price: 60,
+    automatic:false,
     rented: false
   }
 ];
