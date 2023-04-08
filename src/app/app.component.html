@@ -1,5 +1,5 @@
 <header>
-  <div class="px-3 py-2 text-bg-dark">
+  <div class="px-3 py-2 text-bg-dark mb-3">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -38,36 +38,6 @@
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </div>
-  <div class="px-3 py-2 border-bottom mb-3">
-    <div class="container text-center">
-      <div class="row align-items-center">
-        <div class="col-3">
-          <form class="mb-2 mb-lg-0 me-lg-auto" role="search">
-            <input type="search" class="form-control" placeholder="Dream Car..." aria-label="Search" [(ngModel)]="carChoice" name="carSearch">
-          </form>
-        </div>
-        <div class="col-2">
-          <mat-form-field appearance="outline" class="mb-2 mb-lg-0 me-lg-auto">
-            <mat-label>Enter a date range</mat-label>
-            <mat-date-range-input [min]="minDate" [max]="" [rangePicker]="picker">
-              <input matStartDate placeholder="Start date">
-              <input matEndDate placeholder="End date">
-            </mat-date-range-input>
-            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-date-range-picker #picker></mat-date-range-picker>
-          </mat-form-field>
-        </div>
-        <div class="col">
-
-        </div>
-        <div class="col-2 text-end">
-          <button onclick="window.location.href='/login'" type="button" class="btn btn-light text-dark me-2">Login</button>
-          <button type="button" class="btn buttonColor">Sign-up</button>
-        </div>
       </div>
     </div>
   </div>

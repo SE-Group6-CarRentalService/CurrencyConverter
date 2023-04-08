@@ -24,6 +24,8 @@ import { AboutComponent } from './about/about.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import {MatListModule} from "@angular/material/list";
 import {LoginActivate} from "./core/service/LoginActivate";
+import { UserSignupComponent } from './user-signup/user-signup.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import {LoginActivate} from "./core/service/LoginActivate";
     StartPageComponent,
     FaqComponent,
     AboutComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    UserSignupComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

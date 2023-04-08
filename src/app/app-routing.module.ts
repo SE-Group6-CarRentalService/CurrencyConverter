@@ -12,6 +12,7 @@ import {FaqComponent} from "./faq/faq.component";
 import {AboutComponent} from "./about/about.component";
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 import {LoginActivate} from "./core/service/LoginActivate";
+import {UserSignupComponent} from "./user-signup/user-signup.component";
 
 const routes:Routes = [
   {path: '', component: StartPageComponent},
@@ -20,6 +21,7 @@ const routes:Routes = [
   {path: 'rentals', component: RentalSystemComponent, canActivate:[LoginActivate]},
   {path: 'user', component: UserSettingsComponent, canActivate:[LoginActivate]},
   {path: 'login', component: UserLoginComponent},
+  {path: 'sign-up', component: UserSignupComponent},
   {path: 'checkout', component: RentalCheckoutComponent},
   {path: 'faq', component: FaqComponent},
   {path: 'about', component: AboutComponent},

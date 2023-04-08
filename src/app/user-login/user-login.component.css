@@ -27,5 +27,11 @@
 }
 
 .buttonColor{
+  background: #32D150;
+  color: #000000;
+}
+
+.buttonColorSignUp{
   background: #37AA4C;
+  color: #FFFFFF;
 }

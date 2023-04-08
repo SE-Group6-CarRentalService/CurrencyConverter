@@ -10,9 +10,13 @@ import {CarOverview} from "../model/CarOverview";
 })
 export class CarListComponent implements OnInit {
 
-  constructor( private router: Router) { }
+  constructor( private router: Router) {
+    this.minDate = new Date();
+  }
 
   cars = Cars;
+  minDate: Date;
+  carChoice : String = '';
 
   ngOnInit(): void {
   }

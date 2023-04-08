@@ -8,12 +8,5 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'CarRentalFE';
 
-  minDate: Date;
-  dateRange : String = '';
-  carChoice : String = '';
-
-
-  constructor() {
-    this.minDate = new Date();
-  }
+  constructor() { }
 }

@@ -11,6 +11,10 @@ export class RentalCheckoutComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  securityDeposit : number = 0;
+  rentedDays : number = 5;
+  currency : String = '$';
+
   car : CarOverview = {
     automatic: false,
     fuel: "",
@@ -31,7 +35,12 @@ export class RentalCheckoutComponent implements OnInit {
 
   calculateSecurityDeposit(costPerDay:number):number{
     const rate = 5
-    return costPerDay * rate
+    this.securityDeposit = costPerDay * rate
+    return this.securityDeposit
+  }
+
+  calculateTotal(costPerDay:number){
+    return this.securityDeposit + costPerDay * this.rentedDays
   }
 
 
