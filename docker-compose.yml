@@ -1,0 +1,11 @@
+version: '3.10'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/currencyConverter
+    ports:
+      - 8000:8000
+    image: app:currencyConverter
+    container_name: currencyConverter_container
+    command: python manage.py runserver
