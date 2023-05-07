@@ -19,6 +19,8 @@ class SoapService(ServiceBase):
         
         global USDrates
 
+        if startcurr == "USD" and endcurr == "USD":
+            return quantity
         if startcurr == "USD":
             return quantity * USDrates[endcurr]
         if endcurr == "USD":

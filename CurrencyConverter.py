@@ -30,6 +30,7 @@ def convertPrice(price, currency):
 
 
 def convertCurrency(startcurr, quantity, endcurr):
+    print(f"Params: {startcurr} {quantity} {endcurr}")
     if startcurr == "USD":
         return quantity * USDrates[endcurr]
     if endcurr == "USD":
